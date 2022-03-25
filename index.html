@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin Jin Wei | Graduand</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/0ae971ddba.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
+        })();
+  </script>
+</head>
+
+<!--Body-->
+<body>
+    <section id="landing-page">
+
+        <!--Navigation Bar-->
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/personal logo.png" alt="">
+            </figure>
+
+            <ul class = "nav_link--list">
+                <li class = "nav_link" onclick="toggleModal()">
+                    <a class = 
+                    "nav_link--anchor 
+                    link_hover--effect
+                    link_hover--effect--black"
+                    href="#">About</a>
+                </li>
+                <li class = "nav_link">
+                    <a class = 
+                    "nav_link--anchor 
+                    link_hover--effect
+                    link_hover--effect--black"
+                    href="#">Projects</a>
+                </li>
+                <li class = "nav_link" onclick="toggleModal()">
+                    <a class = 
+                    "nav_link--anchor 
+                    link_hover--effect
+                    link_hover--effect--black"
+                    href="#">Contact</a>
+                </li>
+                <li class = "nav_link click" onclick ="toggleContrast()">
+                    <a class = 
+                    "nav_link--anchor 
+                    link-hover-effect
+                    link-hover-effect--black"
+                    href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+            </ul>
+            
+            <button class = 'btn_menu click' onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="menu_backdrop">
+                <button class ="btn_menu btn_menu--close click" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <ul class = 'menu_links'>
+                    <li class="menu_list">
+                        <a href="#" class = 'menu_link click' onclick="toggleModalMenu()">About</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#" class = 'menu_link click' onclick="closeMenu()">Projects</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#" class = 'menu_link click'  onclick="toggleModalMenu()">Contact</a>
+                    </li>
+                    <li class = "menu_list">
+                        <a href="#" class = 'menu_link click'  onclick="toggleContrastMenu()"><i class="fa-solid fa-circle-half-stroke click"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Header-->
+        <header class="header">
+            <div class="title_typewriter" >
+                <h1 class="title dynamic_title">I'm <b class="blue"> Lin Jin Wei.</b></h1>
+            </div>
+
+            <!--Header content-->
+            <div class= "header_content">
+                <p class="header_para">
+                    I'm a <b class="blue">Graduand </b> from Nanyang Polytechnic, Singapore.
+                    <br>
+                </p>
+                <div class="header_para-2nd">
+                    <p>
+                        Here is a bit more <b class = "header_about blue click"  onclick="toggleModal()">about me.</b>
+                    </p>
+                </div>
+
+                <!--Social List-->
+                <div class="social_list">
+                    <a href="https://www.linkedin.com/in/lin-jin-wei-050a93204" target="_blank" class="social_link click">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/lin-jinweii" target = "_blank" class="social_link click">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                    <a href="./assets/LIN JIN WEI_RESUME.pdf" target = "_blank" class="social_link click">
+                        <i class="fa-regular fa-file"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--Programming Pic (Undraw)-->
+            <div class = "header_img--wrapper">
+                <img class = "header_img" src="./assets/programming.svg" alt="">
+            </div>
+        </header>
+        
+        <!--When pressed, return to Main Page-->
+        <a href="#">
+            <!--Mail Button-->
+            <button class="mail_btn click " onclick = "toggleModal()">
+                <i class="fa-solid fa-envelope"></i>
+            </button>
+        </a>
+
+    </section>
+
+</body>
+
+</html>
