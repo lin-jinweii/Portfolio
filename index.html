@@ -37,21 +37,21 @@
                     "nav_link--anchor 
                     link_hover--effect
                     link_hover--effect--black"
-                    href="#">About</a>
+                    href="#about">About</a>
                 </li>
                 <li class = "nav_link">
                     <a class = 
                     "nav_link--anchor 
                     link_hover--effect
                     link_hover--effect--black"
-                    href="#">Projects</a>
+                    href="#projects">Projects</a>
                 </li>
                 <li class = "nav_link" onclick="toggleModal()">
                     <a class = 
                     "nav_link--anchor 
                     link_hover--effect
                     link_hover--effect--black"
-                    href="#">Contact</a>
+                    href="#contact">Contact</a>
                 </li>
                 <li class = "nav_link click" onclick ="toggleContrast()">
                     <a class = 
@@ -70,13 +70,13 @@
                 <button class ="btn_menu btn_menu--close click" onclick="closeMenu()">
                     <i class="fas fa-times"></i>
                 </button>
-
+            
                 <ul class = 'menu_links'>
                     <li class="menu_list">
                         <a href="#" class = 'menu_link click' onclick="toggleModalMenu()">About</a>
                     </li>
                     <li class="menu_list">
-                        <a href="#" class = 'menu_link click' onclick="closeMenu()">Projects</a>
+                        <a href="#projects" class = 'menu_link click' onclick="closeMenu()">Projects</a>
                     </li>
                     <li class="menu_list">
                         <a href="#" class = 'menu_link click'  onclick="toggleModalMenu()">Contact</a>
@@ -127,7 +127,7 @@
         </header>
         
         <!--When pressed, return to Main Page-->
-        <a href="#">
+        <a href="#contact">
             <!--Mail Button-->
             <button class="mail_btn click " onclick = "toggleModal()">
                 <i class="fa-solid fa-envelope"></i>
@@ -230,6 +230,62 @@
             <h1 class="section_title">
                 Here are some of my projects
             </h1>
+
+            <div class="row">
+                <ul class="project_list">
+
+                    <!--Project #1 Web Development-->
+                    <li class="project">
+                        <div class="project_wrapper">
+                            <img src="./assets/test2.jpg" class="project_img">
+                            <div class="project_wrapper--bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description--title">
+                                    Web Development Project
+                                </h3>
+                                <h4 class="project_description--sub-title">
+                                    HTML | CSS | JavaScript
+                                </h4>
+                                <p class="project_description--para">
+                                    First web application created to act like a tuition website. It has navigation, a contact form and a simple calculator to calculate number of hours of tuition that can be afforded.
+                                </p>
+                                <div class="project_description--links">
+                                    <a target = "_blank" href="https://github.com/lin-jinweii/IT1852-Web-Development-Assignment" class="project_description--link">
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </a>
+                                    <a target = "_blank" href="https://lin-jinweii.github.io/IT1852-Web-Development-Assignment/" class="project_description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!--Project #2 Mobile Services-->
+                    <li class="project">
+                        <div class="project_wrapper">
+                            <img src="./assets/pocket.jpg" class="project_img">
+                            <div class="project_wrapper--bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description--title">
+                                    Mobile Services & Application Project
+                                </h3>
+                                <h4 class="project_description--sub-title">
+                                    Ionic | TypeScript | Angular | HTML | SCSS
+                                </h4>
+                                <p class="project_description--para">
+                                    A mobile application developed to loan items. Users can use it to create loan, view & extend loans, and request donations. Managers can use it to manage loans, loan extensions and donations.
+                                </p>
+                                <div class="project_description--links">
+                                    <a target = "_blank" href="https://github.com/lin-jinweii/IT3854-Mobile-Services-Assignment" class="project_description--link">
+                                        <i class="fa-brands fa-github-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
